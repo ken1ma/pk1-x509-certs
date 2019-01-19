@@ -325,3 +325,32 @@ download("MIND-SecureNetwork/G2", "https://www.japannet.jp/jsnca/repository/sntr
 download("MIND-EnterprisePremium/G1", "https://www.japannet.jp/epca/repository/epca.cer")
 download("MIND-EnterprisePremium/G2", "https://www.eppcert.jp/repository/epg2ca.cer")
 download("MIND-EnterprisePremium/G3", "https://www.eppcert.jp/repository/epg3ca.cer")
+
+// SECOM
+// https://repository.secomtrust.net/
+
+// SECOM Passport
+// https://repository.secomtrust.net/PassportFor/G-ID/index.html
+download("SECOM-Passport/G3", "https://repository.secomtrust.net/PassportFor/G-ID/repository/g-idca03.crt")
+download("SECOM-Passport/G2", "https://repository.secomtrust.net/PassportFor/G-ID/repository/g-idca02.crt")
+download("SECOM-Passport/G3withG2", "https://repository.secomtrust.net/PassportFor/G-ID/repository/g-idca03-NewWithOld.crt")
+download("SECOM-Passport/G2withG3", "https://repository.secomtrust.net/PassportFor/G-ID/repository/g-idca03-OldWithNew.crt")
+
+// SECOM Trust.net
+// https://repository.secomtrust.net/rootrepository/index.html
+//download("SECOM-Trust/ValiCert", "https://repository.secomtrust.net/rootrepository/rootca.cer") // 404 as of 2019-02-01
+
+// SECOM Security Communication
+// https://repository.secomtrust.net/SC-Root1/index.html
+download("SECOM-SecurityCommunication/R1", "https://repository.secomtrust.net/SC-Root1/SCRoot1ca.cer")
+//download("SECOM-SecurityCommunication/R1withValiCert", "https://repository.secomtrust.net/rootrepository/STroot2SCroot.cer") // 404 as of 2019-02-01
+//download("SECOM-SecurityCommunication/R1withValiCert-2712", "https://repository.secomtrust.net/rootrepository/old2712_STroot2SCroot.cer") // 404 as of 2019-02-01
+//download("SECOM-SecurityCommunication/R1withValiCert-2711", "https://repository.secomtrust.net/rootrepository/old2711_STroot2SCroot.cer") // 404 as of 2019-02-01
+// https://repository.secomtrust.net/SC-Root2/index.html
+download("SECOM-SecurityCommunication/R2", "https://repository.secomtrust.net/SC-Root2/SCRoot2ca.cer")
+// https://repository.secomtrust.net/SC-Root3/index.html
+download("SECOM-SecurityCommunication/R3", "https://repository.secomtrust.net/SC-Root3/SCRoot3ca.cer")
+// https://repository.secomtrust.net/SC-ECC-Root1/index.html
+download("SECOM-SecurityCommunication/ECC-R1", "https://repository.secomtrust.net/SC-ECC-Root1/SCECCRoot1ca.cer")
+// https://repository.secomtrust.net/EV-Root1/index.html
+//download("SECOM-SecurityCommunication/EV-R1", "https://repository.secomtrust.net/EV-Root1/EVRoot1ca.cer") // 404 as of 2019-02-01
