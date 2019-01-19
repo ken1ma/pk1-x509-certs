@@ -194,3 +194,14 @@ download("GlobalSign/R3/CodeSigningStandard-G3", "https://secure.globalsign.com/
 download("GlobalSign/R3/CodeSigningStandard-G2", "https://secure.globalsign.com/cacert/gscodesignsha2g2.crt")
 download("GlobalSign/R1/CodeSigningStandard-G3", "http://secure.globalsign.com/cacert/gscodesigng3ocsp.crt")
 download("GlobalSign/R1/CodeSigningStandard-G2", "https://secure.globalsign.com/cacert/gscodesigng2.crt")
+
+// AATL & Adobe CDS Intermediate Certificates
+// https://support.globalsign.com/customer/en/portal/articles/2085904-aatl-adobe-cds-intermediate-certificates
+// Adobe Approved Trust List
+download("GlobalSign/R3/AATL-G2/CA-2", "http://secure.globalsign.com/cacert/gsaatl2sha2g2.crt")
+download("GlobalSign/R3/AATL-G2", "http://secure.globalsign.com/cacert/gsaatlsha2g2.crt")
+download("GlobalSign/R3/AATL-G2/CA-3", "http://secure.globalsign.com/cacert/gsaatl3sha2g2.crt")
+// Certified Document Services
+download("Adobe/Adobe Root CA/GlobalSign-CDS-PrimarySHA256/GlobalSign-CDS-SHA256", "http://secure.globalsign.com/cacert/gssha2adobe.der")
+download("Adobe/Adobe Root CA/GlobalSign-CDS-PrimarySHA256", "http://secure.globalsign.com/cacert/gsprmsha2adobe.der")
+download("Adobe/Adobe Root CA", "http://secure.globalsign.com/cacert/adoberoot.cer")
