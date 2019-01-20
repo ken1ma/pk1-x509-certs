@@ -205,3 +205,20 @@ download("GlobalSign/R3/AATL-G2/CA-3", "http://secure.globalsign.com/cacert/gsaa
 download("Adobe/Adobe Root CA/GlobalSign-CDS-PrimarySHA256/GlobalSign-CDS-SHA256", "http://secure.globalsign.com/cacert/gssha2adobe.der")
 download("Adobe/Adobe Root CA/GlobalSign-CDS-PrimarySHA256", "http://secure.globalsign.com/cacert/gsprmsha2adobe.der")
 download("Adobe/Adobe Root CA", "http://secure.globalsign.com/cacert/adoberoot.cer")
+
+// PersonalSign Intermediate Certificates
+// https://support.globalsign.com/customer/en/portal/articles/1211662-personalsign-intermediate-certificates
+download("GlobalSign/R3/PersonalSign-G3-SHA256-1", "https://secure.globalsign.com/cacert/gspersonalsign1sha2g3ocsp.crt")
+download("GlobalSign/R3/PersonalSign-G3-SHA256-2", "https://secure.globalsign.com/cacert/gspersonalsign2sha2g3ocsp.crt")
+download("GlobalSign/R3/PersonalSign-G3-SHA256-3", "https://secure.globalsign.com/cacert/gspersonalsign3sha2g3ocsp.crt")
+download("GlobalSign/R3/PersonalSign-G2-SHA256-1", "https://secure.globalsign.com/cacert/gspersonalsign1sha2g2.crt")
+download("GlobalSign/R3/PersonalSign-G2-SHA256-2", "https://secure.globalsign.com/cacert/gspersonalsign2sha2g2.crt")
+download("GlobalSign/R3/PersonalSign-G2-SHA256-3", "https://secure.globalsign.com/cacert/gspersonalsign3sha2g2.crt")
+download("GlobalSign/R3/PersonalSign-G2-SHA256-Partners", "https://secure.globalsign.com/cacert/gspersonalsignptnrssha2g2.crt")
+download("GlobalSign/R1/PersonalSign-G3-SHA1-1", "http://secure.globalsign.com/cacert/gspersonalsign1g3ocsp.crt")
+download("GlobalSign/R1/PersonalSign-G3-SHA1-2", "http://secure.globalsign.com/cacert/gspersonalsign2g3ocsp.crt")
+download("GlobalSign/R1/PersonalSign-G3-SHA1-3", "http://secure.globalsign.com/cacert/gspersonalsign3g3ocsp.crt")
+download("GlobalSign/R1/PersonalSign-G2-SHA1-1", "https://secure.globalsign.com/cacert/gspersonalsign1g2.crt")
+download("GlobalSign/R1/PersonalSign-G2-SHA1-2", "https://secure.globalsign.com/cacert/gspersonalsign2g2.crt")
+download("GlobalSign/R1/PersonalSign-G2-SHA1-3", "https://secure.globalsign.com/cacert/gspersonalsign3g2.crt")
+download("GlobalSign/R1/PersonalSign-G2-SHA1-Partners", "https://secure.globalsign.com/cacert/gspersonalsignptnrsg2.crt")
