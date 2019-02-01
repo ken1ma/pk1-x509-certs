@@ -354,3 +354,7 @@ download("SECOM-SecurityCommunication/R3", "https://repository.secomtrust.net/SC
 download("SECOM-SecurityCommunication/ECC-R1", "https://repository.secomtrust.net/SC-ECC-Root1/SCECCRoot1ca.cer")
 // https://repository.secomtrust.net/EV-Root1/index.html
 //download("SECOM-SecurityCommunication/EV-R1", "https://repository.secomtrust.net/EV-Root1/EVRoot1ca.cer") // 404 as of 2019-02-01
+
+// JIPDEC JCAN
+// https://www.jipdec.or.jp/repository/
+download("GlobalSign/R3/JCAN-R1", "https://itc.jipdec.or.jp/common/images/jcan_root_ca1.cer")
