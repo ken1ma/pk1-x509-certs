@@ -222,3 +222,84 @@ download("GlobalSign/R1/PersonalSign-G2-SHA1-1", "https://secure.globalsign.com/
 download("GlobalSign/R1/PersonalSign-G2-SHA1-2", "https://secure.globalsign.com/cacert/gspersonalsign2g2.crt")
 download("GlobalSign/R1/PersonalSign-G2-SHA1-3", "https://secure.globalsign.com/cacert/gspersonalsign3g2.crt")
 download("GlobalSign/R1/PersonalSign-G2-SHA1-Partners", "https://secure.globalsign.com/cacert/gspersonalsignptnrsg2.crt")
+
+// GlobalSign Japan
+// https://jp.globalsign.com/repository/
+	// ルート証明書
+		download("GlobalSign/R1", "https://jp.globalsign.com/repository/common/cer/rootcacert_r1.cer", shouldBeSameAsExistingDst = true)
+		download("GlobalSign/R2", "https://jp.globalsign.com/repository/common/cer/rootcacert_r2.cer")
+		download("GlobalSign/R3", "https://jp.globalsign.com/repository/common/cer/rootcacert_r3.cer", shouldBeSameAsExistingDst = true)
+		download("GlobalSign-IntranetSSL/R1", "https://jp.globalsign.com/repository/common/cer/rootcaintrasslcert_sha1.cer", shouldBeSameAsExistingDst = true)
+		download("GlobalSign-IntranetSSL/R2", "https://jp.globalsign.com/repository/common/cer/rootcaintrasslcert_sha2.cer", shouldBeSameAsExistingDst = true)
+		download("GlobalSign-IntranetSSL/R3", "https://jp.globalsign.com/repository/common/cer/rootcaintrasslcert_eccsha2.cer", shouldBeSameAsExistingDst = true)
+	// 中間CA証明書
+		// クイック認証SSL
+			download("GlobalSign/R1/DomainSSL-G2-SHA1", "https://jp.globalsign.com/repository/common/cer/dvcacert_v3.cer")
+			download("GlobalSign/R1/DomainSSL-G2",      "https://jp.globalsign.com/repository/common/cer/gsdomainvalsha2g2.cer", shouldBeSameAsExistingDst = true)
+		// 企業認証SSL
+			download("GlobalSign/R1/OrganizationSSL-G2-SHA1", "https://jp.globalsign.com/repository/common/cer/ovcacert_v3.cer")
+			download("GlobalSign/R1/OrganizationSSL-G2",      "https://jp.globalsign.com/repository/common/cer/gsorganizationvalsha2g2.cer", shouldBeSameAsExistingDst = true)
+		// EV SSL
+			download("GlobalSign/R2/ExtendedSSL-G2-SHA1", "https://jp.globalsign.com/repository/common/cer/evcacert_v3.cer")
+			download("GlobalSign/R2/ExtendedSSL-G2",      "https://jp.globalsign.com/repository/common/cer/gsextendvalsha2g2.cer", shouldBeSameAsExistingDst = true)
+		// クラウドSSL
+			download("GlobalSign/R1/CloudSSL-G3", "https://jp.globalsign.com/repository/common/cer/cloudsslsha2g3.cer", shouldBeSameAsExistingDst = true)
+		// イントラネットSSL
+			download("GlobalSign-IntranetSSL/R1/G3", "https://jp.globalsign.com/repository/common/cer/intrasslcacert_sha1v2.cer", shouldBeSameAsExistingDst = true)
+			download("GlobalSign-IntranetSSL/R2/G3", "https://jp.globalsign.com/repository/common/cer/intrasslcacert_sha2v2.cer", shouldBeSameAsExistingDst = true)
+			download("GlobalSign-IntranetSSL/R3/G3", "https://jp.globalsign.com/repository/common/cer/intrasslcacert_eccsha2v2.cer", shouldBeSameAsExistingDst = true)
+		// コードサイニング証明書
+			download("GlobalSign/R1/CodeSigningStandard-G2", "https://jp.globalsign.com/repository/common/cer/cscacert_v2.cer", shouldBeSameAsExistingDst = true)
+			download("GlobalSign/R3/CodeSigningStandard-G2-NoOCSP", "https://jp.globalsign.com/repository/common/cer/cscacert_v3.cer")
+		// EVコードサイニング証明書
+			download("GlobalSign/R3/CodeSigningEV-G2", "https://jp.globalsign.com/repository/common/cer/gsextendcodesignsha2g2.cer", shouldBeSameAsExistingDst = true)
+		// PDF文書署名用証明書
+			download("Adobe/Adobe Root CA/GlobalSign-CDS-PrimarySHA256",                       "https://jp.globalsign.com/repository/common/cer/cdscacert1.cer", shouldBeSameAsExistingDst = true)
+			download("Adobe/Adobe Root CA/GlobalSign-CDS-PrimarySHA256/GlobalSign-CDS-SHA256", "https://jp.globalsign.com/repository/common/cer/cdscacert2.cer", shouldBeSameAsExistingDst = true)
+		// 文書署名用証明書
+			download("GlobalSign/R3/AATL-G2", "https://jp.globalsign.com/repository/common/cer/doccacert1.cer", shouldBeSameAsExistingDst = true)
+			download("GlobalSign/R3/AATL-G2/CA-2", "https://jp.globalsign.com/repository/common/cer/doccacert2.cer", shouldBeSameAsExistingDst = true)
+		// クライアント証明書
+			download("GlobalSign/R1/PersonalSign-G3-SHA1-2-NoOCSP", "https://jp.globalsign.com/repository/common/cer/pscacert_v2-2.cer")
+			download("GlobalSign/R3/PersonalSign-G3-SHA256-2-NoOCSP", "https://jp.globalsign.com/repository/common/cer/pscacert_v3-2.cer")
+		// TA/TSA
+			download("GlobalSign/R1/Timestamping-G2-SHA1", "https://jp.globalsign.com/repository/common/cer/TimestampingCA_v2.cer")
+			download("GlobalSign/R3/Timestamping-G2-SHA256", "https://jp.globalsign.com/repository/common/cer/sha2TimestampingCA_v2.cer")
+		// ネット選挙対応ウェブサイト用証明書 is the same as 企業認証SSL
+		// ネット選挙対応ウェブサイト用EV証明書 is the same as EV SSL
+		// ネット選挙対応電子メール用証明書
+			download("GlobalSign/R1/PersonalSign-G2-SHA1-2",   "https://jp.globalsign.com/repository/common/cer/pscacert_v2.cer", shouldBeSameAsExistingDst = true)
+			download("GlobalSign/R3/PersonalSign-G2-SHA256-2", "https://jp.globalsign.com/repository/common/cer/pscacert_v3.cer", shouldBeSameAsExistingDst = true)
+	// 【R3用】中間CA証明書 (SHA256:2016年10月14日以降有効)
+		download("GlobalSign/R3/DomainSSL-G2-SHA256", "https://jp.globalsign.com/repository/common/cer/gsdomainvalsha2g2r3.cer")
+		download("GlobalSign/R3/OrganizationSSL-G2-SHA256", "https://jp.globalsign.com/repository/common/cer/gsorganizationvalsha2g2r3.cer")
+		download("GlobalSign/R3/CloudSSL-G3", "https://jp.globalsign.com/repository/common/cer/cloudsslsha2g3r3.cer", shouldBeSameAsExistingDst = true)
+	// 新・中間CA証明書 (EV SSL SHA256:2016年10月31日以降有効)
+		download("GlobalSign/R3/ExtendedSSL-G3", "https://jp.globalsign.com/repository/common/cer/gsextendvalsha2g3r3.cer", shouldBeSameAsExistingDst = true)
+	// 新・中間CA証明書 (SHA-1:2016年4月4日以降有効、SHA256:2016年7月11日以降有効)
+		// コードサイニング証明書
+			download("GlobalSign/R1/CodeSigningStandard-G3", "https://jp.globalsign.com/repository/common/cer/gscodesigng3ocsp_v2.cer", shouldBeSameAsExistingDst = true)
+			download("GlobalSign/R3/CodeSigningStandard-G3", "https://jp.globalsign.com/repository/common/cer/gscodesignsha2g3ocsp.cer", shouldBeSameAsExistingDst = true)
+		// EVコードサイニング証明書
+			download("GlobalSign/R3/CodeSigningEV-G3", "https://jp.globalsign.com/repository/common/cer/gsextendcodesignsha2g3ocsp.cer", shouldBeSameAsExistingDst = true)
+		// 電子証明書（S/MIME）用証明書, ネット選挙対応電子メール用証明書, クライアント証明書・マネージドPKI Lite
+			download("GlobalSign/R1/PersonalSign-G3-SHA1-2", "https://jp.globalsign.com/repository/common/cer/gspersonalsign2g3ocsp_v2.cer", shouldBeSameAsExistingDst = true) 
+			download("GlobalSign/R3/PersonalSign-G3-SHA256-2", "https://jp.globalsign.com/repository/common/cer/gspersonalsign2sha2g3ocsp.cer", shouldBeSameAsExistingDst = true)
+	// テスト証明書に必要なルート/中間CA証明書
+		// SSLサーバ証明書
+			// ルート証明書
+				// SHA-1・SHA256共通 is the same as GlobalSign/R1
+			// 中間CA 証明書
+				// SHA-1 is the same as GlobalSign/R1/DomainSSL-G2-SHA1
+				// SHA-256 is the same as GlobalSign/R1/DomainSSL-G2
+		// 電子署名(S/MIME)用証明書
+			download("GlobalSign/R1/PersonalSign-G3-SHA1-1",   "https://jp.globalsign.com/repository/common/cer/smimetestcacertsha1g3.cer", shouldBeSameAsExistingDst = true)
+			download("GlobalSign/R3/PersonalSign-G2-SHA256-1", "https://jp.globalsign.com/repository/common/cer/smimetestcacertsha2.cer", shouldBeSameAsExistingDst = true)
+		// マネージドPKI Lite
+			download("GlobalSign-Staging/R1",          "https://jp.globalsign.com/repository/common/cer/ca-SHA1-G3_root.cer")
+			download("GlobalSign-Staging/R3-SHA256",   "https://jp.globalsign.com/repository/common/cer/ca-SHA2-G2_root.cer")
+			download("GlobalSign-Staging/R1/PersonalSign-G3-SHA1-2", "https://jp.globalsign.com/repository/common/cer/ca_PS2-SHA1-G3_V2.cer")
+			download("GlobalSign-Staging/R3-SHA256/PersonalSign-G3-SHA256-2",   "https://jp.globalsign.com/repository/common/cer/ca_PS2-SHA2-G3.cer")
+		// PDF文書署名用証明書
+			// その1 is the same as Adobe/Adobe Root CA/GlobalSign-CDS-PrimarySHA256
+			// その2 is the same as Adobe/Adobe Root CA/GlobalSign-CDS-PrimarySHA256/GlobalSign-CDS-SHA256
