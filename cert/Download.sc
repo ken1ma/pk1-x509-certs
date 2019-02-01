@@ -303,3 +303,25 @@ download("GlobalSign/R1/PersonalSign-G2-SHA1-Partners", "https://secure.globalsi
 		// PDF文書署名用証明書
 			// その1 is the same as Adobe/Adobe Root CA/GlobalSign-CDS-PrimarySHA256
 			// その2 is the same as Adobe/Adobe Root CA/GlobalSign-CDS-PrimarySHA256/GlobalSign-CDS-SHA256
+
+// MIND DIACERT
+// https://www.diacert.jp/repository/repository02.html
+download("MIND-DIACERT/G2", "https://www.diacert.jp/repository/DIACERTCA-G2.cer")
+download("MIND-DIACERT/G1", "https://www.diacert.jp/repository/DIACERTCA.cer")
+download("MIND-DIACERT/G2withG1", "https://www.diacert.jp/repository/DIACERTCA-LINK_G2withG1.cer")
+download("MIND-DIACERT/G1withG2", "https://www.diacert.jp/repository/DIACERTCA-LINK_G1withG2.cer")
+
+// MIND DIACERT-PLUS
+// https://www.diacert.jp/plus/repository/repository02.html
+download("MIND-DIACERT-PLUS/G1", "https://www.diacert.jp/plus/repository/DIACERTPLUSCA.cer")
+
+// MIND JapanNet Secure Network
+// https://www.japannet.jp/securenw/repository/index.html
+download("MIND-SecureNetwork/G1", "https://www.japannet.jp/jsnca/repository/sntroot.cer")
+download("MIND-SecureNetwork/G2", "https://www.japannet.jp/jsnca/repository/sntrootg2.cer")
+
+// MIND Enterprise Premium
+// https://www.eppcert.jp/repository/index.html
+download("MIND-EnterprisePremium/G1", "https://www.japannet.jp/epca/repository/epca.cer")
+download("MIND-EnterprisePremium/G2", "https://www.eppcert.jp/repository/epg2ca.cer")
+download("MIND-EnterprisePremium/G3", "https://www.eppcert.jp/repository/epg3ca.cer")
